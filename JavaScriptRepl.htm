@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript multiline repl with clickable history</title>
+  <!-- bower install jquery -->
+
+  <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
+  <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="./jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+  <script src="./jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+  <!-- <script></script> -->
+  <script src="./js/JavaScriptRepl.js"></script>
+
+  <!-- <style></style> -->
+  <link rel="stylesheet" href="styles/JavaScriptRepl.css">
+
+</head>
+<body>
+
+  <h1>JavaScript multiline repl with clickable history</h1>
+  <form onclick="return false;">
+
+    <label class="sr-only" for="expression"></label>
+    <textarea type="text" style="width:100%;height:10em;" id="expression" placeholder="Expression"></textarea>
+
+    <div>
+      <button type="submit" onclick="calculate()">Calculate</button>
+      <label id="message" style="color:red;"></label>
+    </div>
+
+    <div id="history" placeholder="history"
+    style="height:20em;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;padding:1em;">
+    </div>
+
+  </form>
+
+</body>
+</html>
